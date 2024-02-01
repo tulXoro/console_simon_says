@@ -5,9 +5,9 @@ This is a simple application that mimicks the game [Simon](https://en.wikipedia.
 You may use this project however you see fit.
 
 # How to start
-Ensure you have [Python](https://www.python.org/downloads/) installed, between the versions 3.9 and 3.11, and optionally use an IDE. 
+Ensure you have [Python](https://www.python.org/downloads/) installed and optionally use an IDE. If you do not have the right version of Python, you should upgrade/downgrade as necessary.
 Clone the repository with `git clone <url>`.
-Install the necessary dependencies `pip install .`.
+Install the necessary dependencies `pip install .`. 
 Run the game with `python3 main.py`. 
 
 # How to play
