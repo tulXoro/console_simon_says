@@ -1,5 +1,5 @@
 # Description
-This is a simple application that mimicks a typing test in most websites. I built this to primarily help children and teens learn about the fundamentals of programming.
+This is a simple application that mimicks the game [Simon](https://en.wikipedia.org/wiki/Simon_(game)). I built this to primarily help children and teens learn about the fundamentals of programming.
 
 # Usage
 You may use this project however you see fit.
@@ -7,5 +7,8 @@ You may use this project however you see fit.
 # How to start
 Ensure you have [Python](https://www.python.org/downloads/) installed, and optionally use an IDE. Clone the repository and run the game with `python3 main.py`.
 
+# How to play
+Use `QWAS` keys, corresponding to 4 corners of a square. Memorize the order that the squares light up and try repeating it.
+
 # How it works
-It creates two lists. One list is used to display the sentences with colors, and the other is used as a copy of the original list. The program waits until the user types, and if the character they typed is in the same position that they are currently at, then they will change the highlighted color to green and move the cursor.
+It uses emojis to represent 4 segments of the board. The program will activate the square corresponding to the `QWAS` keys. The game uses a queue to keep track of the order of buttons, and a buffer to convert user input so it would be easier to interpret.
