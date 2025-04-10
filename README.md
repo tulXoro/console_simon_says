@@ -5,10 +5,51 @@ This is a simple application that mimicks the game [Simon](https://en.wikipedia.
 You may use this project however you see fit.
 
 # How to start
-Ensure you have [Python](https://www.python.org/downloads/) installed and optionally use an IDE. If you do not have the right version of Python, you should upgrade/downgrade as necessary.
-Clone the repository with `git clone <url>`.
-Install the necessary dependencies `pip install .`. 
-Run the game with `python3 main.py`. 
+1. **Install Python**  
+   Ensure you have the correct version of [Python](https://www.python.org/downloads/) installed. If needed, upgrade/downgrade your Python version to match the project’s requirements.  
+
+2. **Clone the Repository**  
+   ```bash
+   git clone <repository_url>
+   ```
+
+3. **Navigate to the Project Directory**  
+   ```bash
+   cd <project_directory>
+   ```
+
+4. **Set Up a Virtual Environment**  
+   - Create a virtual environment to isolate dependencies:  
+     ```bash
+     python3 -m venv venv  # Use "python" instead of "python3" if needed
+     ```
+   - Activate the virtual environment:  
+     - **Windows (Command Prompt/PowerShell):**  
+       ```bash
+       .\venv\Scripts\activate
+       ```
+     - **macOS/Linux:**  
+       ```bash
+       source venv/bin/activate
+       ```  
+     *(Your terminal prompt will now show `(venv)` to indicate the active environment.)*
+
+5. **Install Dependencies**  
+   Run this command **inside the activated virtual environment**:  
+   ```bash
+   pip install .  # Or "pip install -r requirements.txt" if the project uses a requirements file
+   ```
+
+6. **Run the Game**  
+   Ensure the virtual environment is still active, then execute:  
+   ```bash
+   python3 main.py
+   ```
+
+7. **Deactivate the Virtual Environment (When Finished)**  
+   ```bash
+   deactivate
+   ```
 
 # How to play
 Use `QWAS` keys, corresponding to 4 corners of a square. Memorize the order that the squares light up and try repeating it.
